@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    /* reset, common */
+    *{margin: 0; padding: 0; transition: transform 1s;}
+    .center{position: relative; width: 960px; margin: 0 auto;}
+
+    /* header */
+    body{font-family: sans-serif;}
+    header{
+      background: #ffd300;
+      height: 120px;
+      text-align: center;
+      background-image: url(img/kakaofriends-logo.png);
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+    section.center{margin: 100px auto;}
+    .photo-list{
+      margin-top: 120px;
+    }
+    .photo-list img{position: absolute; bottom: 20px; left: 80px;}
+    .box1, .box2, .box3{
+      width: 300px; height: 1000px;
+      overflow: hidden;
+      float: left;
+      position: relative;
+      color: #fff;
+    }
+    .box1{
+      background:#fec6c8;
+    }
+    .box2{
+      background:#39516e;
+    }
+    .box3{
+      background:#d0d0d0;
+    }
+    p{
+      margin-top: 100px;
+      font-size: 30px;
+      text-align: center;
+      font-weight: bold;
+    }
+    span{
+      display: block;
+      font-size: 20px;
+      text-align: center;
+      opacity: 0.5;
+    }
+    input[type=radio]{
+      display: none;
+    }
+    .photo-list input[type=radio]:checked +div{
+      transform: scale(1.1);
+      box-shadow: 0 0 10px 3px rgba(0, 0,0, 0.5);
+      z-index:1;
+    }
+    p{
+      font-size: 46px;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <header></header>
+  <div class="radio">
+  <section class="center">
+    <article class="photo-list">
+      <label>
+        <input type="radio" name="radio">
+        <div class="box1">
+          <img src="img/어피치.png" alt="어피치">
+          <p>어피치</p>
+          <span>Apeach</span>
+        </div>
+      </label>
+        <label>
+          <input type="radio" name="radio">
+          <div class="box2">
+            <img src="img/라이언.png" alt="라이언" >
+            <p>라이언</p>
+            <span>Ryan</span>
+          </div>
+        </label>
+        <label>
+          <input type="radio" name="radio">
+          <div class="box3">
+            <img src="img/튜브.png" alt="튜브">
+            <p>튜브</p>
+            <span>Tube</span>
+          </div>
+        </label>
+    </article>
+  </section>
+</body>
+</html>
