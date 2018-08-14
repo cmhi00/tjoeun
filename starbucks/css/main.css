@@ -242,7 +242,7 @@ header nav ul li a:hover{
 	font-size: 22px;
 	color: #4d4d4d;
 	text-transform: uppercase;
-	letter-spacing: 50;
+	letter-spacing: 50px;
 }
 
 .services ul li p{
@@ -549,7 +549,7 @@ footer p{
   font-family: 'open_bold', arial;
   color: #424242;
   margin-top: 20px;
-  border: 0px 0px 1px 0px solid #424242;
+  border:1px solid #424242;
 }
 
 ::-webkit-input-placeholder {
